@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F95EACE81A89AF2E00E15DB6 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F985E7031A746625000311AB /* Interface.storyboard */; };
 		F985E6C91A74660F000311AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985E6C81A74660F000311AB /* AppDelegate.swift */; };
 		F985E6CC1A74660F000311AB /* GeoLocation_App_Watch.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F985E6CA1A74660F000311AB /* GeoLocation_App_Watch.xcdatamodeld */; };
 		F985E6CE1A74660F000311AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985E6CD1A74660F000311AB /* ViewController.swift */; };
@@ -14,6 +15,15 @@
 		F985E6D31A74660F000311AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F985E6D21A74660F000311AB /* Images.xcassets */; };
 		F985E6D61A74660F000311AB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F985E6D41A74660F000311AB /* LaunchScreen.xib */; };
 		F985E6E21A74660F000311AB /* GeoLocation_App_WatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985E6E11A74660F000311AB /* GeoLocation_App_WatchTests.swift */; };
+		F985E6F51A746625000311AB /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985E6F41A746625000311AB /* InterfaceController.swift */; };
+		F985E6F71A746625000311AB /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F985E6F61A746625000311AB /* NotificationController.swift */; };
+		F985E6F91A746625000311AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F985E6F81A746625000311AB /* Images.xcassets */; };
+		F985E6FD1A746625000311AB /* GeoLocation App Watch WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = F985E6FC1A746625000311AB /* GeoLocation App Watch WatchKit App.app */; };
+		F985E7071A746625000311AB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F985E7061A746625000311AB /* Images.xcassets */; };
+		F985E70A1A746625000311AB /* GeoLocation App Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = F985E6EF1A746625000311AB /* GeoLocation App Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F985E7131A746651000311AB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F985E7121A746651000311AB /* CoreLocation.framework */; };
+		F985E7151A746693000311AB /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F985E7141A746693000311AB /* Social.framework */; };
+		F985E7161A748C1A000311AB /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F985E7121A746651000311AB /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +34,35 @@
 			remoteGlobalIDString = F985E6C21A74660F000311AB;
 			remoteInfo = "GeoLocation App Watch";
 		};
+		F985E6FE1A746625000311AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F985E6BB1A74660F000311AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F985E6FB1A746625000311AB;
+			remoteInfo = "GeoLocation App Watch WatchKit App";
+		};
+		F985E7081A746625000311AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F985E6BB1A74660F000311AB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F985E6EE1A746625000311AB;
+			remoteInfo = "GeoLocation App Watch WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F985E7111A746625000311AB /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				F985E70A1A746625000311AB /* GeoLocation App Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F985E6C31A74660F000311AB /* GeoLocation App Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GeoLocation App Watch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +76,18 @@
 		F985E6DB1A74660F000311AB /* GeoLocation App WatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GeoLocation App WatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F985E6E01A74660F000311AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F985E6E11A74660F000311AB /* GeoLocation_App_WatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoLocation_App_WatchTests.swift; sourceTree = "<group>"; };
+		F985E6EF1A746625000311AB /* GeoLocation App Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GeoLocation App Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F985E6F21A746625000311AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F985E6F31A746625000311AB /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		F985E6F41A746625000311AB /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		F985E6F61A746625000311AB /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		F985E6F81A746625000311AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F985E6FC1A746625000311AB /* GeoLocation App Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GeoLocation App Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F985E7021A746625000311AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F985E7041A746625000311AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		F985E7061A746625000311AB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F985E7121A746651000311AB /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F985E7141A746693000311AB /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +95,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F985E7151A746693000311AB /* Social.framework in Frameworks */,
+				F985E7131A746651000311AB /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -55,14 +107,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F985E6EC1A746625000311AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F985E7161A748C1A000311AB /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
 		F985E6BA1A74660F000311AB = {
 			isa = PBXGroup;
 			children = (
+				F985E7141A746693000311AB /* Social.framework */,
+				F985E7121A746651000311AB /* CoreLocation.framework */,
 				F985E6C51A74660F000311AB /* GeoLocation App Watch */,
 				F985E6DE1A74660F000311AB /* GeoLocation App WatchTests */,
+				F985E6F01A746625000311AB /* GeoLocation App Watch WatchKit Extension */,
+				F985E7001A746625000311AB /* GeoLocation App Watch WatchKit App */,
 				F985E6C41A74660F000311AB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +136,8 @@
 			children = (
 				F985E6C31A74660F000311AB /* GeoLocation App Watch.app */,
 				F985E6DB1A74660F000311AB /* GeoLocation App WatchTests.xctest */,
+				F985E6EF1A746625000311AB /* GeoLocation App Watch WatchKit Extension.appex */,
+				F985E6FC1A746625000311AB /* GeoLocation App Watch WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +181,44 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F985E6F01A746625000311AB /* GeoLocation App Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				F985E6F41A746625000311AB /* InterfaceController.swift */,
+				F985E6F61A746625000311AB /* NotificationController.swift */,
+				F985E6F81A746625000311AB /* Images.xcassets */,
+				F985E6F11A746625000311AB /* Supporting Files */,
+			);
+			path = "GeoLocation App Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		F985E6F11A746625000311AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F985E6F21A746625000311AB /* Info.plist */,
+				F985E6F31A746625000311AB /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F985E7001A746625000311AB /* GeoLocation App Watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				F985E7031A746625000311AB /* Interface.storyboard */,
+				F985E7061A746625000311AB /* Images.xcassets */,
+				F985E7011A746625000311AB /* Supporting Files */,
+			);
+			path = "GeoLocation App Watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		F985E7011A746625000311AB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F985E7021A746625000311AB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +229,12 @@
 				F985E6BF1A74660F000311AB /* Sources */,
 				F985E6C01A74660F000311AB /* Frameworks */,
 				F985E6C11A74660F000311AB /* Resources */,
+				F985E7111A746625000311AB /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F985E7091A746625000311AB /* PBXTargetDependency */,
 			);
 			name = "GeoLocation App Watch";
 			productName = "GeoLocation App Watch";
@@ -153,6 +259,39 @@
 			productReference = F985E6DB1A74660F000311AB /* GeoLocation App WatchTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		F985E6EE1A746625000311AB /* GeoLocation App Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F985E70E1A746625000311AB /* Build configuration list for PBXNativeTarget "GeoLocation App Watch WatchKit Extension" */;
+			buildPhases = (
+				F985E6EB1A746625000311AB /* Sources */,
+				F985E6EC1A746625000311AB /* Frameworks */,
+				F985E6ED1A746625000311AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F985E6FF1A746625000311AB /* PBXTargetDependency */,
+			);
+			name = "GeoLocation App Watch WatchKit Extension";
+			productName = "GeoLocation App Watch WatchKit Extension";
+			productReference = F985E6EF1A746625000311AB /* GeoLocation App Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		F985E6FB1A746625000311AB /* GeoLocation App Watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F985E70B1A746625000311AB /* Build configuration list for PBXNativeTarget "GeoLocation App Watch WatchKit App" */;
+			buildPhases = (
+				F985E6FA1A746625000311AB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GeoLocation App Watch WatchKit App";
+			productName = "GeoLocation App Watch WatchKit App";
+			productReference = F985E6FC1A746625000311AB /* GeoLocation App Watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +307,12 @@
 					F985E6DA1A74660F000311AB = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = F985E6C21A74660F000311AB;
+					};
+					F985E6EE1A746625000311AB = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					F985E6FB1A746625000311AB = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -186,6 +331,8 @@
 			targets = (
 				F985E6C21A74660F000311AB /* GeoLocation App Watch */,
 				F985E6DA1A74660F000311AB /* GeoLocation App WatchTests */,
+				F985E6EE1A746625000311AB /* GeoLocation App Watch WatchKit Extension */,
+				F985E6FB1A746625000311AB /* GeoLocation App Watch WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +352,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F985E6ED1A746625000311AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F985E6F91A746625000311AB /* Images.xcassets in Resources */,
+				F95EACE81A89AF2E00E15DB6 /* Interface.storyboard in Resources */,
+				F985E6FD1A746625000311AB /* GeoLocation App Watch WatchKit App.app in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F985E6FA1A746625000311AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F985E7071A746625000311AB /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +394,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F985E6EB1A746625000311AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F985E6F71A746625000311AB /* NotificationController.swift in Sources */,
+				F985E6F51A746625000311AB /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +410,16 @@
 			isa = PBXTargetDependency;
 			target = F985E6C21A74660F000311AB /* GeoLocation App Watch */;
 			targetProxy = F985E6DC1A74660F000311AB /* PBXContainerItemProxy */;
+		};
+		F985E6FF1A746625000311AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F985E6FB1A746625000311AB /* GeoLocation App Watch WatchKit App */;
+			targetProxy = F985E6FE1A746625000311AB /* PBXContainerItemProxy */;
+		};
+		F985E7091A746625000311AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F985E6EE1A746625000311AB /* GeoLocation App Watch WatchKit Extension */;
+			targetProxy = F985E7081A746625000311AB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -254,6 +438,14 @@
 				F985E6D51A74660F000311AB /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		F985E7031A746625000311AB /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F985E7041A746625000311AB /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,9 +532,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "GeoLocation App Watch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -350,9 +544,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "GeoLocation App Watch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -390,6 +586,62 @@
 			};
 			name = Release;
 		};
+		F985E70C1A746625000311AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = GeoLocation_App_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "GeoLocation App Watch WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		F985E70D1A746625000311AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				IBSC_MODULE = GeoLocation_App_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "GeoLocation App Watch WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		F985E70F1A746625000311AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "GeoLocation App Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		F985E7101A746625000311AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "GeoLocation App Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -409,6 +661,7 @@
 				F985E6E71A74660F000311AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F985E6E81A74660F000311AB /* Build configuration list for PBXNativeTarget "GeoLocation App WatchTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +670,25 @@
 				F985E6EA1A74660F000311AB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F985E70B1A746625000311AB /* Build configuration list for PBXNativeTarget "GeoLocation App Watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F985E70C1A746625000311AB /* Debug */,
+				F985E70D1A746625000311AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F985E70E1A746625000311AB /* Build configuration list for PBXNativeTarget "GeoLocation App Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F985E70F1A746625000311AB /* Debug */,
+				F985E7101A746625000311AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
